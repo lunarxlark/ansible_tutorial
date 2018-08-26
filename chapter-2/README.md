@@ -26,6 +26,22 @@
   - ansible-pull
   - ansible-vault
 
+## Ansible運用ユーザの作成
+
+## SSH公開鍵認証の設定
+
+```bash:SSH公開鍵認証の登録
+$ ssh-keygen -t rsa
+$ ssh-copy-id -o StrictHostChecking=no -i $HOME/.ssh/id_rds.pub <target_node|localhost>
+```
+
+## ansible.cfgの設定
+
+1. 環境変数のファイルパス(ANSIBLE_CONFIG=/usr/local/ansible/conf/ansible.cfg)
+2. カレントディレクトリ(./ansible.cfg)
+3. ホームディレクトリ($HOME/.ansible.cfg)
+4. /etc/ansible/ansible.cfg
+
 ## コラム
 
 ```bash:localでのansible-playbook実行
