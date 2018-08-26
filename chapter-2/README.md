@@ -3,7 +3,7 @@
 ## Ansibleのコンポーネント
 
 - Module
-  - Core : Ansibleの基本機能を構成するモジュール
+  - Core : Ansibleの基本機能を構成するモジュール
   - Network : 代表的なネットワークベンダー機器をサポートするモジュール
   - Certified : RedHatにより認定されたベンダーが提供するモジュール
   - Community : コミュニティメンバによりメンテされていくモジュール
