@@ -1,0 +1,13 @@
+---
+# provision for local
+- hosts: localhost
+  connection: local
+
+  vars:
+    local_home: "{{ lookup('env', 'HOME') }}"
+
+  tasks:
+    - name: copy files
+      copy:
+        src: foo.conf
+        dest: "{{ local_home }}/foo.conf"

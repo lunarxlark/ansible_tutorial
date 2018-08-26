@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: file copy
+      copy:
+        src: foo.conf
+        dest: "{{ item }}/foo.conf"
+      with_items:
+        - item1
+        - item2
+        - item3
